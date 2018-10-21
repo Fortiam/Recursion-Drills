@@ -5,12 +5,12 @@ function reverseString(stringy) {
     // Base case
     if (stringy.length === 1) {
         //here's the last letter
-        return stringy;//appended to the beginning of string
+        return stringy;
     }
     
     // General case
-    //here move the last letter upfront, then pass on a smaller string?
-    //return lastletter-->>upfront & call reverseString(only the letters after the first)// do time travel here
+    //here chop the first letter, recall the func on the rest, then re-add the first letter
+    
     return reverseString(stringy.slice(1)) + stringy[0];
 }
 

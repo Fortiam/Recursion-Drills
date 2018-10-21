@@ -14,4 +14,4 @@ function countingSheep(totalSheepToJump){
 
 }
 
-countingSheep(3);
+countingSheep(5);
